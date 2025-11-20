@@ -20,11 +20,11 @@ Arcturus consists of three main deployment components:
 ```
 deployment/
 ├── deploy_config.toml          # Unified configuration file
+├── deploy_to_servers.sh        # Batch deployment script
 ├── deploy_scheduling.sh        # Scheduling plane deployment script
 ├── deploy_forwarding.sh        # Forwarding plane deployment script
 └── deploy_traefik.sh           # Traefik + Client Probe deployment script
 ```
-
 ## Configuration File
 
 The `deploy_config.toml` file contains all configuration for all components:
@@ -110,7 +110,7 @@ PASSWORD="Arcturus@Test2024"
 ### 2. Edit the batch deployment file:
 
 ```bash
-vim deployment/deploy_to_server.sh
+vim deployment/deploy_to_servers.sh
 ```
 Server Configuration:
 - FORWARDING_SERVERS
@@ -142,7 +142,7 @@ SCHEDULING_SERVERS=(
 
 ### 3. Run the batch deployment script:
 ```bash
-bash deployment/deploy_to_server.sh
+bash deployment/deploy_to_servers.sh
 ```
 
 ## Service Management
