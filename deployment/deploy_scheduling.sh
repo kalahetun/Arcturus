@@ -631,7 +631,7 @@ build_and_install_service() {
     sudo tee /etc/systemd/system/arcturus-scheduling.service > /dev/null <<EOF
 [Unit]
 Description=Arcturus Scheduling Plane
-Documentation=https://github.com/Bootes2022/Arcturus
+Documentation=https://github.com/kalahetun/Arcturus
 After=network.target mysql.service
 Wants=mysql.service
 

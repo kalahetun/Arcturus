@@ -410,7 +410,7 @@ create_client_probe_service() {
     sudo tee /etc/systemd/system/traefik-client-probe.service > /dev/null <<EOF
 [Unit]
 Description=Arcturus Traefik Client Probe
-Documentation=https://github.com/Bootes2022/Arcturus
+Documentation=https://github.com/kalahetun/Arcturus
 After=network.target
 Wants=network.target
 

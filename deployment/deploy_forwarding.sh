@@ -272,7 +272,7 @@ build_and_install_service() {
     sudo tee /etc/systemd/system/arcturus-forwarding.service > /dev/null <<EOF
 [Unit]
 Description=Arcturus Forwarding Plane
-Documentation=https://github.com/Bootes2022/Arcturus
+Documentation=https://github.com/kalahetun/Arcturus
 After=network.target
 Wants=network.target
 

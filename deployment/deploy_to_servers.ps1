@@ -60,7 +60,7 @@ function Deploy-Server {
 cd /root
 if [ -d Arcturus ]; then rm -rf Arcturus; fi
 echo 'Cloning repository...'
-git clone -q --progress https://github.com/Bootes2022/Arcturus.git 2>&1 | grep -E 'Receiving objects:|done'
+git clone -q --progress https://github.com/kalahetun/Arcturus.git 2>&1 | grep -E 'Receiving objects:|done'
 cd Arcturus/deployment
 sudo bash deploy_forwarding.sh
 sudo systemctl status arcturus-forwarding | grep running"
@@ -70,7 +70,7 @@ sudo systemctl status arcturus-forwarding | grep running"
 cd /root
 if [ -d Arcturus ]; then rm -rf Arcturus; fi
 echo 'Cloning repository...'
-git clone -q --progress https://github.com/Bootes2022/Arcturus.git 2>&1 | grep -E 'Receiving objects:|done'
+git clone -q --progress https://github.com/kalahetun/Arcturus.git 2>&1 | grep -E 'Receiving objects:|done'
 cd Arcturus/deployment
 sudo bash deploy_traefik.sh
 sudo bash deploy_forwarding.sh
@@ -83,7 +83,7 @@ sudo systemctl status arcturus-forwarding | grep running"
 cd /root
 if [ -d Arcturus ]; then rm -rf Arcturus; fi
 echo 'Cloning repository...'
-git clone -q --progress https://github.com/Bootes2022/Arcturus.git 2>&1 | grep -E 'Receiving objects:|done'
+git clone -q --progress https://github.com/kalahetun/Arcturus.git 2>&1 | grep -E 'Receiving objects:|done'
 cd Arcturus/deployment
 sudo bash deploy_scheduling.sh
 sudo systemctl status arcturus-scheduling | grep running"
